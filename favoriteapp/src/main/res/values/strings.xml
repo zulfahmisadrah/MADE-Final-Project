@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Favorite Film</string>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">TV Shows</string>
+    <string name="film_title">Film Title</string>
+    <string name="film_release_date">Film Release Date</string>
+    <string name="film_description">Film Description</string>
+    <string name="overview">Overview</string>
+    <string name="change_language">Change Language</string>
+    <string name="vote_average">Vote Average</string>
+    <string name="favorites">Favorites</string>
+    <string name="no_data">No Data</string>
+    <string name="added_favorites">Added to Favorites</string>
+    <string name="remove_favorites">Removed from Favorites</string>
+    <string name="poster_film">Poster Film</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Search Film</string>
+    <string name="appwidget_text">Favorite Film Banner</string>
+    <string name="add_widget">bAdd widget</string>
+    <string name="empty_text">No Data</string>
+    <string name="image_widget">Image Widget</string>
+    <string name="reminder_settings">Reminder Settings</string>
+    <string name="message_daily">Check out movies to watch today</string>
+    <string name="content_text">Let\'s check out the new releases</string>
+    <string name="sub_text">Film Catalogue</string>
+    <string name="key_daily">daily</string>
+    <string name="key_release">release</string>
+    <string name="daily_reminder">Daily Reminder</string>
+    <string name="release_today_reminder">Release Reminder</string>
+    <string name="summary_daily">Reminder for return to app</string>
+    <string name="summary_release">Reminder showing the movie that released today</string>
+    <string name="message_release_today">Check movies that release today</string>
+</resources>

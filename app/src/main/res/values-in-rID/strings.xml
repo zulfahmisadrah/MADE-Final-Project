@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Katalog Film</string>
+    <string name="movies">Film</string>
+    <string name="tv_shows">Acara TV</string>
+    <string name="film_title">Judul Film</string>
+    <string name="film_release_date">Tanggal Rilis Film</string>
+    <string name="film_description">Deskripsi Film</string>
+    <string name="overview">Sinopsis</string>
+    <string name="change_language">Ubah Bahasa</string>
+    <string name="vote_average">Skor Rata-rata</string>
+    <string name="favorites">Favorit</string>
+    <string name="no_data">Tidak Ada Data</string>
+    <string name="added_favorites">Telah Ditambahkan ke Favorit</string>
+    <string name="remove_favorites">Telah Dihapus dari Favorit</string>
+    <string name="poster_film">Poster Film</string>
+    <string name="search">Cari</string>
+    <string name="search_hint">Cari Film</string>
+    <string name="appwidget_text">Banner Film Favorit</string>
+    <string name="add_widget">Tambah widget</string>
+    <string name="empty_text">Tidak Ada Data</string>
+    <string name="image_widget">Image Widget</string>
+    <string name="reminder_settings">Atur Pengingat</string>
+    <string name="message_daily">Mau nonton film terbaru?</string>
+    <string name="content_text">Ayo cek film yang rilis hari ini!</string>
+    <string name="sub_text">Katalog Film</string>
+    <string name="key_daily">daily</string>
+    <string name="key_release">release</string>
+    <string name="daily_reminder">Pengingat Harian</string>
+    <string name="release_today_reminder">Pengingat Film Rilis</string>
+    <string name="summary_daily">Pengingat untuk kembali ke aplikasi</string>
+    <string name="summary_release">Pengingat untuk mengetahui film rilis hari ini</string>
+    <string name="message_release_today">Cek film yang rilis hari ini</string>
+    <string name="rating">rating</string>
+</resources>

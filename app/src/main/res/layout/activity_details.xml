@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailsActivity">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="@string/poster_film"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:cardCornerRadius="5dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.400">
+
+        <ImageView
+            android:id="@+id/img_poster"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/poster_film"
+            android:src="@drawable/no_image" />
+    </androidx.cardview.widget.CardView>
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_title"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginTop="1dp"-->
+    <!--        android:textSize="14sp"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/img_poster"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView"-->
+    <!--        tools:text="@string/film_title" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        style="@style/text_bold_16"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="@string/film_release_date"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/cv_poster"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_title" />-->
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/text_bold_16"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/film_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cv_poster"
+        app:layout_constraintTop_toBottomOf="@+id/img_backdrop"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/cv_poster"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        tools:text="@string/film_release_date" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="@string/rating"
+        android:src="@drawable/ic_star"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/cv_poster"
+        app:layout_constraintTop_toTopOf="@+id/tv_vote" />
+
+    <TextView
+        android:id="@+id/tv_vote"
+        style="@style/text_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/vote_average"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_vote"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/cv_poster"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView3"-->
+<!--        tools:text="@string/vote_average" />-->
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/text_bold_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/overview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_poster" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        style="@style/text_14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:text="@string/film_description" />
+</androidx.constraintlayout.widget.ConstraintLayout>
